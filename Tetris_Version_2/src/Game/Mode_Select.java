@@ -32,7 +32,7 @@ public class Mode_Select extends JFrame {
 		quit.setFont(new Font("Gothic", Font.BOLD, 17));
 		quit.setForeground(new Color(0, 0, 44));
 
-		nomal.setBackground(new Color(18, 102, 183));// 버튼색
+		nomal.setBackground(new Color(18, 102, 183));
 		time.setBackground(new Color(18, 102, 183));
 		quit.setBackground(new Color(18, 102, 183));
 
