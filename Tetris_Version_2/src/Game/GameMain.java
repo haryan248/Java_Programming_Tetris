@@ -8,21 +8,21 @@ import javax.swing.JPanel;
 public class GameMain extends JPanel {
 	private static final long serialVersionUID = -8715353373678321308L;
 	private static final int FIRST_TIME = 100000000;
-	Color color1 = new Color(255, 18, 18);// 빨간색
-	Color color2 = new Color(255, 130, 36);// 주황색
-	Color color3 = new Color(0, 180, 219);// 하늘색
-	Color color4 = new Color(65, 175, 57);// 초록색
-	Color color5 = new Color(131, 36, 255);// 보라색
-	Color color6 = new Color(19, 18, 255);// 파란색
-	Color color7 = new Color(255, 228, 0);// 노란색
+	Color color1 = new Color(255, 18, 18);// red
+	Color color2 = new Color(255, 130, 36);// orange
+	Color color3 = new Color(0, 180, 219);// skyblue
+	Color color4 = new Color(65, 175, 57);// green
+	Color color5 = new Color(131, 36, 255);// purple
+	Color color6 = new Color(19, 18, 255);// blue
+	Color color7 = new Color(255, 228, 0);// yellow
 	protected final Color[] tetraminoColors = { color1, color2, color3, color4, color5, color6, color7 };
-	protected Point pieceOrigin;// 포인트 클래스는 좌표상의 어떤위치를 나타냄
-	protected Point pieceOrigin2;// 포인트 클래스는 좌표상의 어떤위치를 나타냄
+	protected Point pieceOrigin;
+	protected Point pieceOrigin2;
 	protected int currentPiece;
 	protected int nextPiece;
 	protected int rotation;
 
-	protected ArrayList<Integer> nextPieces = new ArrayList<Integer>();// 배열을 하나씩 증가시키며 추가 add사용
+	protected ArrayList<Integer> nextPieces = new ArrayList<Integer>();
 	public int score;
 	public static int high_Score = 0;
 	public static int least_time = FIRST_TIME;
@@ -73,7 +73,8 @@ public class GameMain extends JPanel {
 			{ { new Point(0, 0), new Point(1, 0), new Point(1, 1), new Point(2, 1) },
 					{ new Point(1, 0), new Point(0, 1), new Point(1, 1), new Point(0, 2) },
 					{ new Point(0, 0), new Point(1, 0), new Point(1, 1), new Point(2, 1) },
-					{ new Point(1, 0), new Point(0, 1), new Point(1, 1), new Point(0, 2) } } };// 테트리스 조각들 배열로 나타냄
+					{ new Point(1, 0), new Point(0, 1), new Point(1, 1), new Point(0, 2) } } };//Tetris block
+
 
 	public void newPiece() {
 		pieceOrigin = new Point(5, 2);
@@ -87,9 +88,9 @@ public class GameMain extends JPanel {
 			nextPieces.add(nextPieces.size(), num);
 
 		}
-		currentPiece = nextPieces.get(0);// 섞고난 후 첫번째 피스 가져오기
-		nextPiece = nextPieces.get(1);// 섞고난 후 다음 피스 가져오기
-		nextPieces.remove(0);// 가져온후 첫번째 피스 지우기
+		currentPiece = nextPieces.get(0);
+		nextPiece = nextPieces.get(1);
+		nextPieces.remove(0);
 		num = (int) (Math.random() * 7);
 		nextPieces.add(nextPieces.size(), num);
 
