@@ -1,4 +1,8 @@
 # Tetris
+<p align="center">
+<img src="https://user-images.githubusercontent.com/51049245/127728275-65d9dd70-e09f-4582-a5ab-50b8e9b5854e.png">
+<p>
+
 ## 팀원 
 이충현, 하현준, 김현수
 
