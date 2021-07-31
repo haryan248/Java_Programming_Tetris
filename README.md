@@ -1,6 +1,7 @@
 # Tetris
+
 <p align="center">
-<img src="https://user-images.githubusercontent.com/51049245/127728275-65d9dd70-e09f-4582-a5ab-50b8e9b5854e.png">
+<img width="400" src="https://user-images.githubusercontent.com/51049245/127728310-2ca0c106-4eab-4ada-a203-bd8ebba939ae.png">
 <p>
 
 ## 팀원 
